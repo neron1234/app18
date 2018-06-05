@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App18"
+             x:Class="App18.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="numerTelefonu"  WidthRequest="300" Placeholder="Numer telefonu" Keyboard="{x:Static Keyboard.Telephone}"  VerticalOptions="LayoutOptions.CenterAndExpand" HorizontalOptions="LayoutOptions.CenterAndExpand" ></Entry>
+
+            <Button x:Name="zadzwonGsm" Text="Zadzwoń gsm"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" Clicked="zadzwonGsmClicked"/>
+
+            <Button x:Name="zadzwonVoip" Text="Zadzwoń voip"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" Clicked="zadzwonVoipClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
